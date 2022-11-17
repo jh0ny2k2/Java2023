@@ -1,4 +1,4 @@
-package practica2;
+package pizzarra;
 
 import java.util.Scanner;
 

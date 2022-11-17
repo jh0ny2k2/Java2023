@@ -1,6 +1,6 @@
-package practica2;
+package pizzarra;
 
-public class ejercicio3clase {
+public class ejercicioclase2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -1,4 +1,4 @@
-package practica2;
+package pizzarra;
 
 public class switch2 {
 
