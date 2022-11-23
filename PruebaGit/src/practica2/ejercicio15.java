@@ -4,7 +4,7 @@ public class ejercicio15 {
 
 	public static void main(String[] args) {
 		
-		double cantidad=2000;
+		int cantidad=2000;
 		double interes=0.0275;
 		double retencion=0.18;
 		double intereses, retenciones = 0;
@@ -20,8 +20,6 @@ public class ejercicio15 {
 		
 		resultado= (2000*2.75/100/2) - ((2000*2.75/100/2)*0.18);
 		System.out.println(resultado);
-		
-
 	}
 
 }
