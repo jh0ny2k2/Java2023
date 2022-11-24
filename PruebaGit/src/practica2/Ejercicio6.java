@@ -1,6 +1,6 @@
 package practica2;
 
-public class Ejercicio5 {
+public class Ejercicio6 {
 	public static void main(String[] args)
 	{
 		System.out.println("Hola usuario."+" Bienvenido.");
