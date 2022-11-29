@@ -5,9 +5,10 @@ public class ejercicio20 {
 
 	public static void main(String[] args) {
 		
+		
 		Scanner sc = new Scanner(System.in);
 		
-		int numero = 0;
+		int numero = 0, i;
 		
 		System.out.println("Dime un numero");
 		try {
@@ -16,16 +17,14 @@ public class ejercicio20 {
 			System.out.println("Dime un numero entero");
 		}
 		
-		if (numero%2 == 0) {
-			System.out.println("Es divisible entre 2");
-		}else if (numero%3 == 0) {
-			System.out.println("Es divisible entre 3");
-			}else if (numero%5 == 0) {
-			System.out.println("Es divisible entre 5");
-					}else if (numero%10 == 0) {
-			System.out.println("Es divisible entre 10");
-						}
-
+		for (i=1; i==100; i++) {
+			if (numero%i == 0) {
+				System.out.println("El numero " + numero + " es divisible entre " + i );
+			}else {
+				System.out.println("El numero no es divisor de " + i);
+			}
+		}
+	
 	}
 
 }
