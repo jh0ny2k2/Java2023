@@ -1,7 +1,6 @@
-package Ejercicios;
+package practica4;
 
 import java.util.Scanner;
-
 public class Ejercicio1 {
 	
 	public static void pintarVectores(int []vector) {
