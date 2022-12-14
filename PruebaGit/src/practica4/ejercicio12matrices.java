@@ -18,7 +18,7 @@ public class ejercicio12matrices {
 					matriz[i][j]=1;
 				}else 
 					matriz[j][j]=0;
-				System.out.print(matriz[i][j]+" | ");
+				System.out.print(matriz[i][j] + " ");
 		
 			}
 			System.out.println();	

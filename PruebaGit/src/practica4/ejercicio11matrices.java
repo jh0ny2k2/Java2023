@@ -21,10 +21,12 @@ public class ejercicio11matrices {
 			}
 			for (int j=0; j<5; j++) {
 				vector[0][j] = 1;
-				System.out.println(vector[i][j]);
+				System.out.print(vector[i][j]);
 			}
+			System.out.println();
 		}
-
+		
+ 
 	}
 
 }

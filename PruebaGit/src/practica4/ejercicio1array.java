@@ -1,7 +1,7 @@
 package practica4;
 
 import java.util.Scanner;
-public class Ejercicio1 {
+public class ejercicio1array {
 	
 	public static void pintarVectores(int []vector) {
 		for (int i=0; i<vector.length; i++) {
