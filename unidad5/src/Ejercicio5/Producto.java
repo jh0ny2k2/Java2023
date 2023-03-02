@@ -130,18 +130,21 @@ public class Producto {
 
 	public boolean vender(int cantidad) {
 		if ( (cantidad <= 0) || (this.unidadesdisponibles < cantidad)) {
+			
 			return false;
 		} else {
 			this.unidadesdisponibles -= cantidad;
-			return true;
 			
+			return true;
 		}
 	}
 	
 	public int reponer() {
 		int diferencia;
+		
 		diferencia = this.stockmax - this.unidadesdisponibles;
 		this.unidadesdisponibles = this.stockmax;
+		
 		return diferencia; 
 	}
 	

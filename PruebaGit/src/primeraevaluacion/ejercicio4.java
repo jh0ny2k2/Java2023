@@ -93,43 +93,6 @@ public class ejercicio4 {
 		
 		}
 		
-		/**do {
-			for(int i=0; i < matriz.length; i++) {
-				for(int j=0; j < matriz[i].length; j++) {
-					
-				//Ponemos los puntos	
-				matriz[i][j] = '.';
-		
-				//Columna derecha
-				if (j == matriz[i].length - 1) {
-					matriz[i][j] = '|';
-				}
-				
-				//Columna izquierda
-				if (j == 0) {
-					matriz[i][j] = '|';
-				}
-				
-				//Fila abajo
-				if (i == matriz.length - 1) {
-					matriz[i][j] = '-';
-				}
-				
-				//Fila arriba
-				if (i == 0) {
-					matriz[i][j] = '-';
-				}else if (j==19) {
-					matriz[i][j] = '|';
-				}
-				
-				matriz[0][19]='|';
-				matriz[0][0]='@';
-				
-				}
-			}
-		} while numero =1;
-	**/
-
 	
 		
 	}
