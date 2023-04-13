@@ -1,30 +1,22 @@
-package ejercicio5;
+package Ejercicio2;
 
-import java.util.Objects;
+import java.util.Collections;
 
-public class Publicacion implements Prestable {
+public class Publicacion implements Prestable,Comparable<Publicacion>{
 
-	protected int isbn;
+	protected String isbn;
 	protected String titulo;
 	protected int ano;
 	protected int paginas;
-	
-	public Publicacion() {
-		super();
-		this.isbn = 0;
-		this.titulo = "";
-		this.ano = 0;
-		this.paginas = 0;
-	}
 
-	public Publicacion(int isbn, String titulo, int ano, int paginas) {
+	public Publicacion(String isbn, String titulo, int ano, int paginas) {
 		super();
 		this.isbn = isbn;
 		this.titulo = titulo;
 		this.ano = ano;
 		this.paginas = paginas;
 	}
-
+	
 	public Publicacion(Publicacion publi) {
 		super();
 		this.isbn = publi.isbn;
@@ -33,37 +25,38 @@ public class Publicacion implements Prestable {
 		this.paginas = publi.paginas;
 	}
 
-	public int getIsbn() {
+	public String getIsbn() {
 		return isbn;
-	}
-
-	public void setIsbn(int isbn) {
-		this.isbn = isbn;
 	}
 
 	public String getTitulo() {
 		return titulo;
 	}
 
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
-	}
-
 	public int getAno() {
 		return ano;
-	}
-
-	public void setAno(int ano) {
-		this.ano = ano;
 	}
 
 	public int getPaginas() {
 		return paginas;
 	}
 
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public void setAno(int ano) {
+		this.ano = ano;
+	}
+
 	public void setPaginas(int paginas) {
 		this.paginas = paginas;
 	}
+
 
 	@Override
 	public String toString() {
@@ -80,37 +73,23 @@ public class Publicacion implements Prestable {
 		return builder.toString();
 	}
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(titulo);
-	}
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Publicacion other = (Publicacion) obj;
-		return Objects.equals(titulo, other.titulo);
-	}
-
-	@Override
 	public void presta() {
+	}
+
+	public void devuelve() {
 		
 	}
 
-	@Override
-	public void devuelve() {
-	}
-
-	@Override
 	public boolean estaPrestado() {
 		return false;
 	}
-	
-	
+
+	@Override
+	public int compareTo(Publicacion o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 }
+

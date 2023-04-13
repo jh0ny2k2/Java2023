@@ -58,17 +58,22 @@ public class Parking {
 		StringBuilder sb = new StringBuilder();
 		
 		if (this.plazasDisponibles == 0) {
-			sb.append("Parking lleno");
+			return "El parking esta lleno";
 		}
 		
-		for (PlazaAparcamiento p : plazas) {
-			if ()
-		}
 		
 		return sb.toString();
 	}
 	
-	
+	public PlazaAparcamiento buscarPlaza() {
+		
+		for (PlazaAparcamiento p : plazas) {
+			if (p.isEstaLibre());
+			return p;
+		}
+		
+		return null;
+	}
 	
 	
 }
