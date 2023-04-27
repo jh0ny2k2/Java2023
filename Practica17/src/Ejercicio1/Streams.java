@@ -3,6 +3,8 @@ package Ejercicio1;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
+import java.util.Optional;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -70,6 +72,10 @@ public class Streams {
 	
 	//DEVUELVE LA PRIMERA CADENA QUE CUMPLA QUE CONTIENE (CONTAINS) LA "O"
 	
-	
+	Optional<String> resultado =
+		lista
+		.stream()
+		.filter(Predicate.isEqual("o"))
+		.findFirst();
 
 }
