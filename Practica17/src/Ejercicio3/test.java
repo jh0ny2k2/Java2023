@@ -102,13 +102,12 @@ public class test {
 		
 		//METODO QUE MUESTRE CADA USUARIO (NICK) Y PARA CADA UNO LA PUNTUACIONES DE LOS JUEGOS A LOS QUE JUEGA
 		
-		
-				//usuarios.stream()
-						//.flatMap(juego -> juego.getPuntuacion())
+
 						
 		//METODO QUE RECIBA COMO PARAMETRO UN USUARIO Y MUESTR TODAS SUS PUNTUACIONES ORDENADAS POR PUNTOS
 						
-		String jugador = "u1";
+		
+
 				
 		
 		
