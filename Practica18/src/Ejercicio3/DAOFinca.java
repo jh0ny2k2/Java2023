@@ -6,6 +6,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 public class DAOFinca {
 
@@ -78,11 +83,36 @@ public class DAOFinca {
 		return null;
 		
 	}
-
-	public static DAOFinca getInstance() {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public List<Finca> getFincasPorSuperficie() {
+		
+		return fincas.stream()
+				.sorted(Comparator.comparingDouble(Finca::getSuperficie))
+				.collect(Collectors.toList());
+	}
+	
+	public List<Finca> getMasGrandes(){
+		return fincas.stream()
+				.sorted(Comparator.comparingDouble(Finca::getSuperficie).reversed())
+				.limit(3)
+				.collect(Collectors.toList());
+				
+	}
+	
+	public Map<String, List<Finca>> getFincasPorCiudad() {
+		return fincas.stream()
+				.collect(Collectors.groupingBy(Finca::getLocalidad));
+	}
+	
+	public List <String> getFincasMedio(){
+		return fincas.stream()
+				.filter(finca -> finca.getSuperficie() >= 50 && finca.getSuperficie() <= 150)
+				.map(Finca::getNombre)
+				.collect(Collectors.toList());
 	}
 	
 	
+	
+	
 }
+
