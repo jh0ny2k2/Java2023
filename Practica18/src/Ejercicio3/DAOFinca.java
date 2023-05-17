@@ -40,13 +40,15 @@ public class DAOFinca {
                 Finca f = new Finca(id, nombre, longitud, latitud, superficie, localidad, provincia);
                 fincas.add(f);
             }
+			
+			br.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 	
 	
-	public Finca findById( int id) {
+	public  Finca findById( int id) {
 		
 		for (Finca f : fincas) {
 			if (f.getId() == id) {
@@ -75,6 +77,11 @@ public class DAOFinca {
 		
 		return null;
 		
+	}
+
+	public static DAOFinca getInstance() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

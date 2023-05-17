@@ -11,14 +11,16 @@ public class Lectura {
 	private LocalDateTime momento;
 	private Finca finca;
 	
-	public Lectura(int id, double temperatura, double humedad, LocalDateTime momento, Finca finca) {
+	public Lectura(int id, double temperatura, double humedad, LocalDateTime momento) {
 		super();
 		this.id = id;
 		this.temperatura = temperatura;
+		this.finca = finca;
 		this.humedad = humedad;
 		this.momento = momento;
-		this.finca = finca;
+		
 	}
+
 
 	public int getId() {
 		return id;
