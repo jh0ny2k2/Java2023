@@ -97,5 +97,10 @@ public class Discord {
 	
 	//METODO PARA GUARDAR LO QUE HAS MODIFICADO LLEVANDOLO A TXT DE NUEVO
 	
-	
+	public void guardarGamers() {
+		
+		jugadores.forEach(jugador -> System.out.println(jugador.getNick() + " + " + jugador.getEmail() 
+							+ " + " + jugador.getJuego() + " + " + jugador.getNivel()));
+							
+	}
 }
